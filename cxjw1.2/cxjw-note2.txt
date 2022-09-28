@@ -1,0 +1,53 @@
+***项目日志***
+1.vue的img元素中动态引入图片地址方法
+正确:
+<img :src="require(''+usericon)" alt="用户">
+错误:
+<img :src="usericon" alt="用户">
+2.路由文件的组合
+(1)所有路由文件最终需整合到一个.js文件中导出export default new Router(
+  routes:[xx,xx]
+)
+(2)routes后的[]中,要运用es6整合数组的方式,数组对象前加必须加三个.圆点
+如果不是数组则不要加
+比如:
+export default new Router({
+  // 这里要运用es6整合数组的方式,如果cour是数组对象前加必须加三个.圆点
+  routes: [{
+    path: '/stum',
+    component: StudentManager
+  },
+   ...cour//它是数组对象,如果不是数组对象则不要加小圆点
+  ]
+})
+3.关于vue.js
+vue.js的应用,是一种封装更好更全面的js框架
+(1)安装与配置/基本语法
+(2)各种插值/各种指令/组件的应用/路由的应用/事件
+v-show/v-if/v-for/v-model/v-bind/v-on
+(3)vue实例中的属性与函数/vue的样式/vue动态数据/数据双向绑定等
+根实例常用属性或函数:el/data(){}/methods/mounted/router/render/components等
+(4)ajax(axios)/json解析
+安装axios:  npm install --save axios
+          或
+            cnpm install --save axios
+可以在组件中单独导入axios,也可以在main.js文件中导入,并设置全局$axios对象,
+即:
+import axios from 'axios';
+Vue.prototype.$axios=axios;
+请求的本地json文件,务必放到static文件夹下,然后通过../static/json/course.json
+或http://localhost:8080/static/json/course.json获取
+(5)vue-cli脚手架构建项目的应用(初建->设计->部署)
+4.发布与部署vue脚手架项目
+请注意修改项目配置文件config/index.js中的build的路径设置为相对路径./
+比如: assetsPublicPath: './'
+在项目文件夹下输入:   npm run build
+5.导入vue脚手架项目到本地开发工具
+通过hbuilder打开项目文件夹->切换到项目文件夹对应命令窗口
+->npm install 系统根据配置文件package.json来下载各种库文件到你的项目中
+
+实战练习:
+1.优化并完善cxjw小型教务管理系统
+(1)后端接口: http://localhost:8081/go
+(2)axios用法参考bootshop1.2
+2."墨刀","gitblit",Element-ui(应用到cxjw中)完善文档

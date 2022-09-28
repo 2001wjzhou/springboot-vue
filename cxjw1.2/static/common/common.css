@@ -1,0 +1,27 @@
+*,p,div,img,a,table,tr,ul,li,ol,td,th,input,form,span,button{
+  margin: 0;
+  padding: 0;
+}
+/* 去除列表标签的默认样式 */
+ul,li,ol{
+  list-style: none;
+}
+.clearF:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.clearF{
+  zoom: 1;
+}
+.main{
+  /* 设置一个宽度 */
+  width: 1250px;
+  margin: 0 auto;
+}
+/* 设置a标签的通用样式 */
+a{
+  text-decoration: none;
+  color:grey;
+  font-size: 12px;
+}

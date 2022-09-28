@@ -1,0 +1,64 @@
+[{
+    "cnumber": "sub0016",
+    "cname": "专业英语",
+    "period": 65,
+    "credit":6,
+    "hdept":"计科学院",
+    "ctype":"必修",
+    "testway":"考试"
+  },
+  {
+      "cnumber": "sub0017",
+      "cname": "数据结构",
+      "period": 70,
+      "credit":8,
+      "hdept":"计科学院",
+      "ctype":"必修",
+      "testway":"考试"
+    },
+  {
+      "cnumber": "sub0018",
+      "cname": "人力资源管理",
+      "period": 50,
+      "credit":3,
+      "hdept":"经管学院",
+      "ctype":"公选课",
+      "testway":"考试"
+    },
+  {
+      "cnumber": "sub0019",
+      "cname": "大学生心理健康",
+      "period": 60,
+      "credit":7,
+      "hdept":"管理学院",
+      "ctype":"必修",
+      "testway":"考试"
+    },
+  {
+      "cnumber": "sub0020",
+      "cname": "中国近代史纲要",
+      "period": 32,
+      "credit":4,
+      "hdept":"文学院",
+      "ctype":"公选课",
+      "testway":"考查"
+    },
+  {
+      "cnumber": "sub0021",
+      "cname": "创新思维训练",
+      "period": 25,
+      "credit":2,
+      "hdept":"经管学院",
+      "ctype":"必修",
+      "testway":"考试"
+    },
+  {
+      "cnumber": "sub0022",
+      "cname": "毛泽东思想",
+      "period": 35,
+      "credit":4,
+      "hdept":"文学院",
+      "ctype":"必修",
+      "testway":"考试"
+    }
+]
